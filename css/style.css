@@ -1,9 +1,3 @@
-/* Start Variables */
-/* :root {
-  --main-color: #10cab7;
-} */
-/* End Variables */
-/* Start Global Rules */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -263,21 +257,17 @@ body {
   }
 }
 
-
-/* /////////////////////////////////////////// */
-
-
-
-/* ///////////////////////////////////////////////////////////////// */
-
-
-
 /* ///////////////////////////////////////////////////////////// */
+
 .main-4 {
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 100vh;
+}
+
+.main-4 .left {
+  flex: 1;
 }
 
 .main-4 .left h3 {
@@ -286,7 +276,6 @@ body {
   text-align: center;
   font-weight: 700;
   font-family: 'Arial', sans-serif;
-  flex: 1;
   position: relative;
   margin: 0;
   -webkit-text-fill-color: transparent;
@@ -311,11 +300,10 @@ body {
 }
 
 .main-4 .right {
-  width: 30%;
+  flex: 1;
   margin-left: 50px;
 }
 
 .main-4 .right img {
-  margin-left: 50px;
-  width: 90%;
+  width: 100%;
 }
