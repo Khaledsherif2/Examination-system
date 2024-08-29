@@ -1,0 +1,82 @@
+[{
+  "1": {
+    "question": "Inside which HTML element do we put the JavaScript?",
+    "answerOne": "&lt;scripting&gt;",
+    "answerTwo": "&lt;script&gt;",
+    "answerThree": "&lt;js&gt;",
+    "answerFour": "&lt;javascript&gt;",
+    "correct": "answerTwo"
+  },
+  "2": {
+    "question": "What is the correct JavaScript syntax to change the content of the HTML element below? \n &lt;p id=\"demo\"&gt;This is a demonstration.&lt;/p&gt;",
+    "answerOne": "document.getElement(\"p\").innerHTML = \"Hello World!\";",
+    "answerTwo": "document.getElementByName(\"p\").innerHTML = \"Hello World!\";",
+    "answerThree": "#demo.innerHTML = \"Hello World!\";",
+    "answerFour": "document.getElementById(\"demo\").innerHTML = \"Hello World!\";",
+    "correct": "answerFour"
+  },
+  "3": {
+    "question": "what is the correct place to insert a JavaScript",
+    "answerOne": "The &lt;body&gt; section",
+    "answerTwo": "Both the &lt;head&gt; secton and the &lt;body&gt; section are correct",
+    "answerThree": "The &lt;head&gt; section",
+    "answerFour": "none of the Above",
+    "correct": "answerTwo"
+  },
+  "4": {
+    "question": "What is the correct syntax for referring to an external script called \"xxx.js\"?",
+    "answerOne": "&lt;script name=\"xxx.js\"&gt;",
+    "answerTwo": "&lt;script href=\"xxx.js\"&gt;",
+    "answerThree": "&lt;script src=\"xxx.js\"&gt;",
+    "answerFour": "none of the Above",
+    "correct": "answerThree"
+  },
+  "5": {
+    "question": "Which event occurs when the user clicks on an HTML element?",
+    "answerOne": "onmouseclick",
+    "answerTwo": "onchange",
+    "answerThree": "onmouseover",
+    "answerFour": "onclick",
+    "correct": "answerFour"
+  },
+  "6": {
+    "question": "How do you write \"Hello World\" in an alert box?",
+    "answerOne": "alertBox(\"Hello World!\");",
+    "answerTwo": "msgBox(\"Hello World!\");",
+    "answerThree": "alert(\"Hello World!\");",
+    "answerFour": "msg(\"Hello World!\");",
+    "correct": "answerThree"
+  },
+  "7": {
+    "question": "How do you create a function in JavaScript?",
+    "answerOne": "function myFunction()",
+    "answerTwo": "function:myFunction()",
+    "answerThree": "function = myFunction()",
+    "answerFour": "none of the Above",
+    "correct": "answerOne"
+  },
+  "8": {
+    "question": "How do you call a function named \"myFunction\"?",
+    "answerOne": "call myfunction()",
+    "answerTwo": "call function myFunction()",
+    "answerThree": "myFunction()",
+    "answerFour": "none of the Above",
+    "correct": "answerThree"
+  },
+  "9": {
+    "question": "How to write an IF statement in JavaScript?",
+    "answerOne": "if i = 5 then",
+    "answerTwo": "if i == 5 then",
+    "answerThree": "if (i == 5)",
+    "answerFour": "if i = 5",
+    "correct": "answerThree"
+  },
+  "10": {
+    "question": "How to write an IF statement for executing some code if \"i\" is NOT equal to 5?",
+    "answerOne": "if i &lt;&gt; 5",
+    "answerTwo": "if (i != 5)",
+    "answerThree": "if (i &lt;&gt; 5)",
+    "answerFour": "if i =! 5 then",
+    "correct": "answerTwo"
+  }
+}]
