@@ -243,7 +243,7 @@ class Exam {
             <button class="retake">Retake</button>
           </div>
           <div class="right">
-            <img src="../img/Customer Survey-rafiki.png" alt="">
+            <img src="./img/survey.png" alt="">
           </div>
         </div>
       `;
