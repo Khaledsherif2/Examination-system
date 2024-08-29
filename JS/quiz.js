@@ -52,11 +52,11 @@ class Exam {
 
   logout() {
     sessionStorage.clear();
-    window.location.href = "../index.html";
+    window.location.href = "index.html";
   }
 
   handleEvent() {
-    fetch("./api.json")
+    fetch("./JS/api.json")
       .then(res => res.json())
       .then(data => {
         setTimeout(() => {
@@ -213,7 +213,7 @@ class Exam {
 
   handleSubmit() {
     this.stopTimer()
-    fetch("./api.json")
+    fetch("./JS/api.json")
       .then(res => res.json())
       .then(data => {
         this.result(data);
@@ -233,7 +233,7 @@ class Exam {
   displayResult(numCorrect) {
     const mainContainer = document.querySelector(".main-container");
     if (numCorrect === 10) {
-      window.location.href = "../result.html";
+      window.location.href = "result.html";
     } else {
       mainContainer.innerHTML = `
         <div class="main-3">

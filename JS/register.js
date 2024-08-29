@@ -157,7 +157,7 @@ class Register {
     const account = this.accounts.find(acc => acc.email === userName && acc.password === password);
 
     if (account) {
-      window.location.href = "../exam.html";
+      window.location.href = "exam.html";
     } else {
       validUser.innerHTML = "Invalid username or password.";
       validLoginPass.innerHTML = "Invalid username or password.";
@@ -199,7 +199,7 @@ class Register {
   }
 }
 
-// Initialize the Register class
+
 document.addEventListener('DOMContentLoaded', () => {
   new Register();
 });
