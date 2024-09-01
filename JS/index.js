@@ -36,9 +36,9 @@ class App {
 
     // Shared Data
     this.accounts = JSON.parse(sessionStorage.getItem("accounts")) || [];
-    this.fName = this.accounts[0]?.firstName || "User";
-    this.lName = this.accounts[0]?.lastName || "";
-    this.image = sessionStorage.getItem("uploadedImage") || "";
+    // this.fName = this.accounts[0]?.firstName || "User";
+    // this.lName = this.accounts[0]?.lastName || "";
+    // this.image = sessionStorage.getItem("uploadedImage") || "";
     this.selectedAnswers = {};
     this.flaggedQuestions = new Set();
 
@@ -301,10 +301,13 @@ class App {
         }, 1500);
       });
 
+    const fName = this.accounts[0]?.firstName || "User";
+    const lName = this.accounts[0]?.lastName || "";
+    const image = sessionStorage.getItem("uploadedImage") || "";
     this.div.classList.add("active");
+    this.photo.src = image;
+    this.name.innerText = `${fName} ${lName}`;
     this.sidePanel.style.display = "flex";
-    this.photo.src = this.image;
-    this.name.textContent = `${this.fName} ${this.lName}`;
     this.progBar.style.display = "block";
     this.ldiv.style.flex = "100%";
 
