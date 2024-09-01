@@ -516,6 +516,7 @@ body {
   transform: translate(0px, 0px);
   height: 500px;
   width: 100%;
+  padding: 0;
   margin: auto;
 }
 
