@@ -484,23 +484,24 @@ body {
 
 .main-2 .left .t {
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   line-height: 1.5;
 }
 
 .main-2 .left .q {
   height: 50px;
   width: 100px;
+
   margin-left: auto;
-  margin-right: 50px;
-  padding-top: 10px;
+  margin-right: 80px;
+  text-align: center;
+  padding-top: 14px;
   border-radius: 8px;
   background-color: rgb(69, 90, 100);
   color: white;
   margin-top: 20px;
   cursor: pointer;
-  transition: transform 0.5s linear, height 0.5s linear 0.5s,
-    width 0.5s linear 1s;
+  transition: transform 0.5s ease, height 0.5s linear 0.5s, width 0.5s linear 1s;
 }
 
 .main-2 .left .q:hover {
@@ -523,7 +524,9 @@ body {
 }
 
 .main-2 .right img {
-  width: 100%;
+  width: 85%;
+  margin-left: auto;
+  display: block;
 }
 
 .quiz-container {
@@ -670,6 +673,25 @@ body {
   margin-left: 50px;
   width: 100%;
   filter: grayscale(0.8);
+}
+
+@media (max-width: 768px) {
+  .main-3 .right img {
+    display: none;
+  }
+
+  .main-3 {
+    display: unset;
+  }
+
+  .main-3 .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+  }
 }
 
 .main-5 {
