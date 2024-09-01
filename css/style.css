@@ -14,7 +14,6 @@ body {
   height: 100vh;
   width: 100%;
   background-color: #eee;
-  
 }
 
 .container {
@@ -42,15 +41,15 @@ body {
   }
 }
 /* End Global Rules */
-.main {
+#registration-section {
   position: relative;
   top: 50%;
-  left: 50%;  
+  left: 50%;
   transform: translate(-50%, -50%);
 }
-
-.main .container {
+#registration-section .container {
   display: flex;
+  justify-content: center;
 }
 
 .log-main {
@@ -59,10 +58,10 @@ body {
   border-radius: 10px;
   /* border: 2px solid red; */
   overflow: hidden;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.main .container .log-right {
+#registration-section .container .log-right {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -77,20 +76,20 @@ body {
 .log-right.move {
   transform: translateX(-100%);
 }
-.main .container .log-right h3 {
+#registration-section .container .log-right h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
 
-.main .container .log-right p {
-  font-size: .8rem;
+#registration-section .container .log-right p {
+  font-size: 0.8rem;
   color: rgba(255, 255, 255, 0.726);
 }
 
-.main .container .log-left {
+#registration-section .container .log-left {
   width: 50%;
-  padding: 20px 0; 
-  background-color:white;
+  padding: 20px 0;
+  background-color: white;
   transition: 1s;
 }
 
@@ -195,7 +194,7 @@ body {
 
 .form h6 {
   margin-top: 15px;
-  font-size: .8rem;
+  font-size: 0.8rem;
   color: #0000008e;
 }
 
@@ -207,10 +206,10 @@ body {
 
 .form button {
   padding: 8px 20px;
-  margin-top:10px;
-  border-radius:20px;
+  margin-top: 10px;
+  border-radius: 20px;
   border: none;
-  background-color: rgba(56, 62, 70, 0.836);;
+  background-color: rgba(56, 62, 70, 0.836);
   color: white;
   font-size: 12px;
   cursor: pointer;
@@ -218,42 +217,42 @@ body {
   text-align: center;
 }
 
-.form button:hover{
+.form button:hover {
   background-color: white;
   color: black;
   border: 1px solid black;
 }
 
-.main .img-main {
+.img-main {
   width: 35%;
   margin-left: 5%;
 }
-.main .img-main img {
+.img-main img {
   width: 100%;
 }
 
-@media(max-width: 768px){
-  .main .img-main {
+@media (max-width: 768px) {
+  .img-main {
     display: none;
   }
   .log-main {
     flex-direction: column;
-    width:80%;
+    width: 80%;
     margin: 0 auto;
     justify-content: start;
   }
-  .main .container .log-right,
-  .main .container .log-left {
+  #registration-section .container .log-right,
+  #registration-section .container .log-left {
     width: 100%;
   }
-  .main .container .log-right {
+  #registration-section .container .log-right {
     order: -1;
   }
   .log-right.move {
-    transform: translateY(361%);
+    transform: translateX(0);
   }
   .log-left.move {
-    transform: translateY(-28%);
+    transform: translateX(0);
   }
 }
 
@@ -275,7 +274,7 @@ body {
   font-size: 3rem;
   text-align: center;
   font-weight: 700;
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   position: relative;
   margin: 0;
   -webkit-text-fill-color: transparent;
@@ -284,19 +283,65 @@ body {
   background-repeat: no-repeat;
   animation: textcolor 10s linear infinite;
 }
-  
+
 @keyframes textcolor {
-  0% {background-image: linear-gradient(to right, red, yellow);}
-  10% {background-image: linear-gradient(to right, green, blue);}
-  20% {background-image: linear-gradient(to right, red, green);}
-  30% {background-image: linear-gradient(to right, cyan, yellow, blue);}
-  40% {background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);}
-  50% {background-image: repeating-linear-gradient(to right, red, yellow 10%, green 20%);}
-  60% {background-image: radial-gradient(circle, red, yellow, green);}
-  70% {background-image: radial-gradient(circle at center, red 5%, yellow 15%, green 60%);}
-  80% {background-image: radial-gradient(circle, red, yellow, green);}
-  90% {background-image: repeating-radial-gradient(circle, red, yellow 10%, green 15%);}
-  100% {background-image: linear-gradient(to right, red, rgba(255,0,0,0));}
+  0% {
+    background-image: linear-gradient(to right, red, yellow);
+  }
+  10% {
+    background-image: linear-gradient(to right, green, blue);
+  }
+  20% {
+    background-image: linear-gradient(to right, red, green);
+  }
+  30% {
+    background-image: linear-gradient(to right, cyan, yellow, blue);
+  }
+  40% {
+    background-image: linear-gradient(
+      to right,
+      red,
+      orange,
+      yellow,
+      green,
+      blue,
+      indigo,
+      violet
+    );
+  }
+  50% {
+    background-image: repeating-linear-gradient(
+      to right,
+      red,
+      yellow 10%,
+      green 20%
+    );
+  }
+  60% {
+    background-image: radial-gradient(circle, red, yellow, green);
+  }
+  70% {
+    background-image: radial-gradient(
+      circle at center,
+      red 5%,
+      yellow 15%,
+      green 60%
+    );
+  }
+  80% {
+    background-image: radial-gradient(circle, red, yellow, green);
+  }
+  90% {
+    background-image: repeating-radial-gradient(
+      circle,
+      red,
+      yellow 10%,
+      green 15%
+    );
+  }
+  100% {
+    background-image: linear-gradient(to right, red, rgba(255, 0, 0, 0));
+  }
 }
 
 .main-4 .right {
@@ -306,4 +351,419 @@ body {
 
 .main-4 .right img {
   width: 100%;
+}
+/* *********************************** */
+.main-container {
+  display: flex;
+  justify-content: center;
+}
+
+.side-panel {
+  height: 100vh;
+  flex: 0.35;
+  background-color: #2f3640;
+  color: white;
+  padding: 20px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  transition: display 1s linear;
+}
+
+.user-info {
+  margin-bottom: 10px;
+}
+
+.user-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.logout-btn {
+  background-color: #dcdde1;
+  color: #2f3640;
+  border: none;
+  margin-top: 5px;
+  padding: 5px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: #57606f;
+  color: white;
+}
+
+.quiz-timer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.quiz-timer .timer {
+  font-size: 24px;
+  background-color: #dcdde1;
+  color: #2f3640;
+  border-radius: 8px;
+  padding: 10px;
+  margin-right: 5px;
+}
+.quiz-timer p {
+  font-size: 20px;
+  background-color: #dcdde1;
+  color: #2f3640;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.flags .flag {
+  background-color: #dcdde1;
+  color: #2f3640;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.submit-btn {
+  background-color: #dcdde1;
+  color: #2f3640;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.main-2 {
+  flex: 2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 30px;
+}
+
+.progress-bar {
+  position: relative;
+  flex: 100%;
+  background-color: #dcdde1;
+  height: 8px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  display: none;
+  transition: display 1s linear;
+}
+
+.progress {
+  background-color: #2f3640;
+  height: 100%;
+  width: 0;
+  border-radius: 4px;
+}
+
+.progress-percentage {
+  position: absolute;
+  top: -20px;
+  right: 0;
+  font-size: 12px;
+  color: #2f3640;
+}
+
+.main-2 .left {
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-2 .left .t {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.main-2 .left .q {
+  height: 50px;
+  width: 100px;
+  margin-left: auto;
+  margin-right: 50px;
+  padding-top: 10px;
+  border-radius: 8px;
+  background-color: rgb(69, 90, 100);
+  color: white;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: transform 0.5s linear, height 0.5s linear 0.5s,
+    width 0.5s linear 1s;
+}
+
+.main-2 .left .q:hover {
+  background-color: transparent;
+  color: rgb(24, 26, 27);
+  border: 1px solid rgb(69, 90, 100);
+}
+.main-2 .left .q.active {
+  background-color: transparent;
+  color: rgb(24, 26, 27);
+  border: 1px solid rgb(69, 90, 100);
+  transform: translate(0px, 0px);
+  height: 500px;
+  width: 100%;
+  margin: auto;
+}
+
+.main-2 .right {
+  flex: 50%;
+}
+
+.main-2 .right img {
+  width: 100%;
+}
+
+.quiz-container {
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.question-header {
+  background-color: #2f3640;
+  color: white;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.quiz-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.quiz-option {
+  background-color: #f4f4f4;
+  border: 2px solid #dcdde1;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.quiz-option:hover {
+  background-color: #dcdde1;
+}
+
+.quiz-option.selected {
+  background-color: rgb(41, 146, 183);
+  border-color: #2f3640;
+}
+
+.quiz-navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-btn {
+  background-color: #dcdde1;
+  color: #2f3640;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.nav-btn:hover {
+  background-color: #57606f;
+  color: white;
+}
+
+.flag-btn {
+  background-color: #dcdde1;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.flag-btn:hover {
+  background-color: #57606f;
+  color: white;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 4px;
+  background-color: #dcdde1;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.dot.active,
+.dot:hover {
+  background-color: #2f3640;
+}
+
+.main-3 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+.main-3 .left {
+  text-align: center;
+}
+
+.main-3 .left p {
+  line-height: 1.5;
+  font-weight: 900;
+  font-size: 26px;
+  font-family: "DM Serif Text", serif;
+}
+
+.main-3 .left button {
+  padding: 10px 50px;
+  border-radius: 20px;
+  background-color: rgba(69, 90, 100, 0.904);
+  color: white;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.main-3 .left button:hover {
+  background-color: transparent;
+  color: black;
+}
+
+.main-3 .right {
+  width: 40%;
+  margin-left: 50px;
+}
+
+.main-3 .right img {
+  margin-left: 50px;
+  width: 100%;
+  filter: grayscale(0.8);
+}
+
+.main-5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main-5 .mid {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  background-color: rgb(56, 62, 70);
+  color: white;
+  text-align: center;
+  padding: 10px 30px;
+  border-radius: 10px;
+}
+
+.main-5 .mid i {
+  color: white;
+  display: block;
+}
+
+.main-5 .mid button {
+  padding: 10px 50px;
+  border-radius: 20px;
+  background-color: rgba(69, 90, 100, 0.904);
+  color: white;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.main-5 .mid button:hover {
+  background-color: transparent;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+  }
+  .side-panel {
+    flex-direction: row;
+  }
+  .side-panel .content {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    flex-wrap: wrap;
+  }
+  .user-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100vh;
+  }
+  .quiz-timer {
+    gap: 10px;
+    margin-left: 30px;
+  }
+  .flags {
+    margin-left: 20px;
+  }
+  .main-2 {
+    height: 50vh;
+  }
+  .main-2 .right {
+    display: none;
+  }
+  .main-2 .left {
+    text-align: center;
+  }
+  .main-2 .left .t {
+    line-height: 2;
+    margin: 20px 0;
+  }
+  .main-2 .left .q.active {
+    height: auto;
+    width: 100%;
+  }
+  .submit-btn {
+    background-color: #dcdde17d;
+    color: #23262b;
+    margin: auto;
+    padding: 50px 10px;
+  }
+  .main-2 .left .q {
+    margin: auto;
+    text-align: center;
+  }
+  .quiz-options {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
 }

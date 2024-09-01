@@ -15,24 +15,25 @@
     />
   </head>
   <body>
-    <div class="main">
+    <!-- Registration Section -->
+    <div id="registration-section">
       <div class="container">
         <div class="log-main">
           <div class="log-left">
             <div class="log-left-top">
               <div class="div1"><p>1</p></div>
-              <hr class="one">
+              <hr class="one" />
               <div class="div2"><p>2</p></div>
-              <hr class="two">
+              <hr class="two" />
               <div class="div3"><p>3</p></div>
             </div>
             <div class="log-left-bottom">
               <form class="form" action="" id="form">
                 <h6>First Name</h6>
-                <input id="firstName" type="text"  />
+                <input id="firstName" type="text" />
                 <p class="valid-first"></p>
                 <h6>Last Name</h6>
-                <input id="lastName" type="text"  />
+                <input id="lastName" type="text" />
                 <p class="valid-last"></p>
                 <button type="submit" id="toEmail">NEXT</button>
               </form>
@@ -44,10 +45,50 @@
           </div>
         </div>
         <div class="img-main">
-          <img src="./img/Mobile login-rafiki.png" alt="" >
+          <img src="./img/Mobile login-rafiki.png" alt="" />
         </div>
       </div>
     </div>
-   <script src="./JS/register.js"></script>
+
+    <!-- Exam Section -->
+    <div id="exam-section" style="display: none">
+      <div class="main-container">
+        <div class="side-panel">
+          <div class="content">
+            <div class="user-info">
+              <img src="" alt="User Avatar" class="user-avatar" />
+              <p></p>
+              <button class="logout-btn">Logout</button>
+            </div>
+            <div class="quiz-timer">
+              <span class="timer"></span>
+              <p>🚩</p>
+            </div>
+            <div class="flags"></div>
+          </div>
+          <button class="submit-btn">Submit</button>
+        </div>
+        <div class="main-2">
+          <div class="progress-bar">
+            <div class="progress"></div>
+            <span class="progress-percentage"></span>
+          </div>
+          <div class="left">
+            <div class="t">
+              Welcome to JavaScript Exam, We wish you success as you embark on
+              this assessment. Begin confidently & do your best!
+            </div>
+            <div class="q">Start Now</div>
+          </div>
+          <div class="right">
+            <img src="./img/Online test-rafiki.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Result Section -->
+    <div id="result-section" style="display: none"></div>
+    <script src="./JS/index.js"></script>
   </body>
 </html>
